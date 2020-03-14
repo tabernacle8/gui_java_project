@@ -27,6 +27,8 @@ public class GraphicsPannel extends JPanel
 	{
       	final int WIDTH = 500;
 		  final int HEIGHT = 500;
+
+		  //System.out.println(MainRunner.location1);
 		  
 		  page.setColor(Color.BLACK);
 
@@ -38,9 +40,40 @@ public class GraphicsPannel extends JPanel
 		page.drawLine(170, 30, 170, 430);
 		page.drawLine(320, 30, 320, 430);
 
-		
 
-   	}
+		//Temp o's
+
+		drawo(page,2,2);
+		/*
+		for(int i=0;i<10;i++){
+
+			if(MainRunner.locations.get(i).equals("Player")){
+				drawx(page,i);
+			}
+			if(MainRunner.locations.get(i).equals("Computer")){
+				//drawo(page,i);
+			}
+
+		}
+		*/
+	
+		repaint();
+
+	   }
+	   
+	   public void drawx(Graphics page, int row,int collum){
+
+		row = row -1;
+		collum = collum-1;
+
+			page.drawLine(60+(140*row),50+(collum*140),160+(140*row),140+(collum*140));
+			page.drawLine(60+(140*row),140+(collum*140),160+(140*row),50+(collum*140));
+	   }
+
+	   public void drawo(Graphics page, int row,int collum){
+
+
+	   }
    	
 	
 	/**

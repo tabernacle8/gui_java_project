@@ -27,81 +27,72 @@ public class ButtonPannel extends JPanel {
         move1.addActionListener(
             new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
-                    JOptionPane.showMessageDialog(frame,
-                        "You've clicked OK button"
-                    );
+                   MainRunner.locations.set(0,"Player");
+                   MainRunner.computerTurn();
                 }
             });
             JButton move2 = new JButton("Space 2");
             move2.addActionListener(
                 new ActionListener() {
                     public void actionPerformed(ActionEvent e) {
-                        JOptionPane.showMessageDialog(frame,
-                            "You've clicked OK button"
-                        );
+                        MainRunner.locations.set(1,"Player");
+                        MainRunner.computerTurn();
                     }
                 });
                 JButton move3 = new JButton("Space 3");
                 move3.addActionListener(
                     new ActionListener() {
                         public void actionPerformed(ActionEvent e) {
-                            JOptionPane.showMessageDialog(frame,
-                                "You've clicked OK button"
-                            );
+                            MainRunner.locations.set(2,"Player");
+                            MainRunner.computerTurn();
                         }
                     });
                     JButton move4 = new JButton("Space 4");
                     move4.addActionListener(
                         new ActionListener() {
                             public void actionPerformed(ActionEvent e) {
-                                JOptionPane.showMessageDialog(frame,
-                                    "You've clicked OK button"
-                                );
+                                MainRunner.locations.set(3,"Player");
+                                MainRunner.computerTurn();
                             }
                         });
                         JButton move5 = new JButton("Space 5");
                         move5.addActionListener(
                             new ActionListener() {
                                 public void actionPerformed(ActionEvent e) {
-                                    JOptionPane.showMessageDialog(frame,
-                                        "You've clicked OK button"
-                                    );
+                                    MainRunner.locations.set(4,"Player");
+                                    MainRunner.computerTurn();
                                 }
                             });
                             JButton move6 = new JButton("Space 6");
                             move6.addActionListener(
                                 new ActionListener() {
                                     public void actionPerformed(ActionEvent e) {
-                                        JOptionPane.showMessageDialog(frame,
-                                            "You've clicked OK button"
-                                        );
+                                        MainRunner.locations.set(5,"Player");
+                                        MainRunner.computerTurn();
                                     }
                                 });
                                 JButton move7 = new JButton("Space 7");
                                 move7.addActionListener(
                                     new ActionListener() {
                                         public void actionPerformed(ActionEvent e) {
-                                            JOptionPane.showMessageDialog(frame,
-                                                "You've clicked OK button"
-                                            );
+                                            MainRunner.locations.set(6,"Player");
+                                            MainRunner.computerTurn();
                                         }
                                     });
                                     JButton move8 = new JButton("Space 8");
                                     move8.addActionListener(
                                         new ActionListener() {
                                             public void actionPerformed(ActionEvent e) {
-                                                JOptionPane.showMessageDialog(frame,
-                                                    "You've clicked OK button"
-                                                );
+                                                MainRunner.locations.set(7,"Player");
+                                                MainRunner.computerTurn();
                                             }
                                         });
                                         JButton move9 = new JButton("Space 9");
                                         move9.addActionListener(
                                             new ActionListener() {
                                                 public void actionPerformed(ActionEvent e) {
-                                                    JOptionPane.showMessageDialog(frame,
-                                                        "You've clicked OK button"
-                                                    );
+                                                    MainRunner.locations.set(8,"Player");
+                                                    MainRunner.computerTurn();
                                                 }
                                             });
 
