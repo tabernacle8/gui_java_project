@@ -1,6 +1,7 @@
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Random;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -8,9 +9,15 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JFrame;
+import java.util.Random;
+import javax.swing.JPanel;
+import java.awt.*;
 
-public class MainRunner {
+public class ButtonPannel extends JPanel {
+
     public static void main(String[] args) {
+        
         final JFrame frame = new JFrame();
 
         // Create OK button
