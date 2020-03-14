@@ -35,8 +35,11 @@ public class GraphicsPannel extends JPanel
 			page.drawLine(50, 300, 450, 300);
 
 		//Draw vertical bars
+		page.drawLine(170, 30, 170, 430);
+		page.drawLine(320, 30, 320, 430);
 
 		
+
    	}
    	
 	
