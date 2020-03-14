@@ -1,4 +1,3 @@
-import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Random;
@@ -26,8 +25,18 @@ public class GraphicsPannel extends JPanel
    	 */
    	public void paintComponent (Graphics page)
 	{
-      	final int MID = 500;
-      	final int TOP = 500;
+      	final int WIDTH = 500;
+		  final int HEIGHT = 500;
+		  
+		  page.setColor(Color.BLACK);
+
+		  //Draw horizontal bars
+			page.drawLine(50, 150, 450, 150);
+			page.drawLine(50, 300, 450, 300);
+
+		//Draw vertical bars
+
+		
    	}
    	
 	
@@ -36,7 +45,7 @@ public class GraphicsPannel extends JPanel
 	 */
 	public GraphicsPannel()
 	{
-		setPreferredSize(new Dimension(300, 200));
+		setPreferredSize(new Dimension(500, 500));
 	}
 	
 	
