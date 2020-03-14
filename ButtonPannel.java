@@ -19,7 +19,10 @@ import java.applet.Applet;
 public class ButtonPannel extends JPanel {
 
     public static void main(String[] args) {
-        
+        if(MainRunner.running==false){
+			System.out.println("ERROR!!!\n\nPlease run the MainRunner file! ");
+			System.exit(0);
+		}
         final JFrame frame = new JFrame();
 
        

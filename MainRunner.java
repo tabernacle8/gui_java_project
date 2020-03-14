@@ -9,6 +9,7 @@ otherfile.main(args);
 class MainRunner{
 
     protected static ArrayList<String> locations = new ArrayList<>();
+    protected static boolean running = false;
 
     public MainRunner(){
 
@@ -30,7 +31,7 @@ class MainRunner{
     public static void main (String[] args)
 	{
         System.out.println("Boot!");
-
+        running = true;
         for(int i=0; i<9;i++){
         locations.add("none");
         }

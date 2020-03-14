@@ -91,6 +91,11 @@ public class GraphicsPannel extends JPanel
 	 */
 	public static void main (String[] args)
 	{
+
+		if(MainRunner.running==false){
+			System.out.println("ERROR!!!\n\nPlease run the MainRunner file! ");
+			System.exit(0);
+		}
 		JFrame frame = new JFrame ("GraphicsPannel");
 		frame.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().add(new GraphicsPannel());
