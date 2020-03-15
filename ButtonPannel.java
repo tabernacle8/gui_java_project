@@ -5,9 +5,14 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import java.applet.Applet;
+//Carter K...
+//Java Tic-Tac-Toe
+//Period 6 Java (Anw...)
 
+//This file will handle button creation and display
 public class ButtonPannel extends JPanel {
 
+    //Create Buttons
     protected static JButton move1 = new JButton("Space 1");
     protected static JButton move2 = new JButton("Space 2");
     protected static JButton move3 = new JButton("Space 3");
@@ -19,19 +24,30 @@ public class ButtonPannel extends JPanel {
     protected static JButton move9 = new JButton("Space 9");
 
 
+
+    //Main Method to begin setup
     public static void main(String[] args) {
+
+        //Force running from the main runner to sync code
         if (MainRunner.running == false) {
             MainRunner.main(args);
         }
+
+        //Create the frame
         final JFrame frame = new JFrame();
 
+        //Add buttons + ActionListener events
         move1.addActionListener(
             new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
                     if (MainRunner.locations.get(0).equals("none")) {
+                        //Sets the player's position to clicked button
                         MainRunner.locations.set(0, "Player");
+                        //Tells the main method how many spaces are left
                         MainRunner.spacesleft--;
+                        //Forces the comuter to go
                         MainRunner.computerTurn();
+                        //Disables the button
                         move1.setEnabled(false);
                     }
                 }
@@ -134,6 +150,7 @@ public class ButtonPannel extends JPanel {
                 }
             });
 
+        //Add our button pannel, add buttons, and assign it to the frame
         JPanel buttonPanel = new JPanel();
         buttonPanel.add(move1);
         buttonPanel.add(move2);
@@ -145,12 +162,14 @@ public class ButtonPannel extends JPanel {
         buttonPanel.add(move8);
         buttonPanel.add(move9);
 
+        //Default frame stuff
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(1000, 100);
         frame.getContentPane().add(buttonPanel, BorderLayout.SOUTH);
         frame.setVisible(true);
     }
 
+    //Disables specific buttons as requested by the MainRunner class
     public static void disable(int number) {
         if (number == 1) {
             move1.setEnabled(false);

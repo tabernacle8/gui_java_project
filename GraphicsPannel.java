@@ -1,13 +1,16 @@
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import java.awt.*;
+//Carter K...
+//Java Tic-Tac-Toe
+//Period 6 Java (Anw...)
 
+//This class handles drawing the tic-tac-toe board and winnings
 public class GraphicsPannel extends JPanel {
 
 	public void paintComponent(Graphics page) {
-		final int WIDTH = 500;
-		final int HEIGHT = 500;
 
+		//Check if anybody won and draw it first
 		drawWin(page, MainRunner.checkPlayerWin());
 		drawWin(page, MainRunner.checkComputerWin());
 
@@ -21,6 +24,7 @@ public class GraphicsPannel extends JPanel {
 		page.drawLine(170, 30, 170, 430);
 		page.drawLine(320, 30, 320, 430);
 
+		//Calculate which row / which columb is each space
 		for (int i = 0; i < 9; i++) {
 			int row = 0;
 			int collum = 0;
@@ -46,6 +50,8 @@ public class GraphicsPannel extends JPanel {
 				collum = 3;
 			}
 
+			//Print X or O depending on if a player or computer owns that spot
+			//Yes: Collum and row are backwards, it just works like that
 			if (MainRunner.locations.get(i).equals("Player")) {
 				drawx(page, collum, row);
 			}
@@ -55,9 +61,12 @@ public class GraphicsPannel extends JPanel {
 
 		}
 
+		//If the game is still in session, live update the display
 		if (MainRunner.gameInSession == true) {
 			repaint();
 		} else {
+
+			//If somebody won, force disable all buttons
 			ButtonPannel.move1.setEnabled(false);
 			ButtonPannel.move2.setEnabled(false);
 			ButtonPannel.move3.setEnabled(false);
@@ -71,6 +80,8 @@ public class GraphicsPannel extends JPanel {
 
 	}
 
+	//Function to draw a little line through who won
+	//IMPLEMENTS: check(Player/Computer)Win()
 	public void drawWin(Graphics page, String outcome) {
 
 		if (outcome.equals("none")) {
@@ -108,6 +119,7 @@ public class GraphicsPannel extends JPanel {
 		}
 	}
 
+	//Draws an X as a previous method requested
 	public void drawx(Graphics page, int row, int collum) {
 
 		row = row - 1;
@@ -117,6 +129,7 @@ public class GraphicsPannel extends JPanel {
 		page.drawLine(60 + (140 * row), 140 + (collum * 140), 160 + (140 * row), 50 + (collum * 140));
 	}
 
+	//Draws an O as a previous method requested
 	public void drawo(Graphics page, int row, int collum) {
 
 		row = row - 1;
@@ -125,15 +138,20 @@ public class GraphicsPannel extends JPanel {
 		page.drawOval(60 + (140 * row), 40 + (collum * 140), 100, 100);
 	}
 
+	//Init the pannel and set dimensions
 	public GraphicsPannel() {
 		setPreferredSize(new Dimension(500, 500));
 	}
 
+	//Main Method
 	public static void main(String[] args) {
 
+		//Force this file to be in sync with the MainRunner class
 		if (MainRunner.running == false) {
 			MainRunner.main(args);
 		}
+
+		//Init the frame and append it / display it
 		JFrame frame = new JFrame("GraphicsPannel");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().add(new GraphicsPannel());
