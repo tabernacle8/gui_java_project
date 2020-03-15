@@ -20,8 +20,7 @@ public class ButtonPannel extends JPanel {
 
     public static void main(String[] args) {
         if(MainRunner.running==false){
-			System.out.println("ERROR!!!\n\nPlease run the MainRunner file! ");
-			System.exit(0);
+			MainRunner.main(args);
 		}
         final JFrame frame = new JFrame();
 

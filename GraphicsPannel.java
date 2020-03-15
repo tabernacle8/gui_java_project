@@ -41,9 +41,9 @@ public class GraphicsPannel extends JPanel
 		page.drawLine(320, 30, 320, 430);
 
 
-		//Temp o's
-
 		drawo(page,2,2);
+
+
 		/*
 		for(int i=0;i<10;i++){
 
@@ -71,8 +71,11 @@ public class GraphicsPannel extends JPanel
 	   }
 
 	   public void drawo(Graphics page, int row,int collum){
+		
+		row = row -1;
+		collum = collum-1;
 
-
+				page.drawOval(60+(140*row), 40+(collum*140), 100, 100);
 	   }
    	
 	
@@ -93,8 +96,7 @@ public class GraphicsPannel extends JPanel
 	{
 
 		if(MainRunner.running==false){
-			System.out.println("ERROR!!!\n\nPlease run the MainRunner file! ");
-			System.exit(0);
+			MainRunner.main(args);
 		}
 		JFrame frame = new JFrame ("GraphicsPannel");
 		frame.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
