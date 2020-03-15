@@ -40,23 +40,40 @@ public class GraphicsPannel extends JPanel
 		page.drawLine(170, 30, 170, 430);
 		page.drawLine(320, 30, 320, 430);
 
+		for(int i=0;i<9;i++){
+			int row = 0;
+			int collum = 0;
 
-		drawo(page,2,2);
+			if(i==0 || i==1 || i==2){
+				row= 1;
+			}
+			if(i==3 || i==4 || i==5){
+				row= 2;
+			}
+			if(i==6 || i==7 || i==8){
+				row= 3;
+			}
 
+			if(i==0 || i==3 ||i==6){
+				collum=1;
+			}
 
-		/*
-		for(int i=0;i<10;i++){
+			if(i==1 || i==4 || i==7){
+				collum=2;
+			}
+			if(i==2 || i==5 || i==8){
+				collum=3;
+			}
 
+			System.out.println(MainRunner.locations);
 			if(MainRunner.locations.get(i).equals("Player")){
-				drawx(page,i);
+				drawx(page,collum,row);
 			}
 			if(MainRunner.locations.get(i).equals("Computer")){
-				//drawo(page,i);
+				drawo(page,collum,row);
 			}
 
 		}
-		*/
-	
 		repaint();
 
 	   }
@@ -88,8 +105,7 @@ public class GraphicsPannel extends JPanel
 	}
 	
 	
-	/**
-	 * Starting point for Snowman application.
+	/*
 	 * @param args unused
 	 */
 	public static void main (String[] args)
