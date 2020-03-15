@@ -84,8 +84,8 @@ public class GraphicsPannel extends JPanel {
 	//IMPLEMENTS: check(Player/Computer)Win()
 	public void drawWin(Graphics page, String outcome) {
 
-		if (outcome.equals("none")) {
-
+		if (outcome.equals("none") || MainRunner.gameInSession == false) {
+			//Do nothing
 		} else {
 			page.setColor(Color.RED);
 			if (outcome.equals("r1")) {
