@@ -1,15 +1,12 @@
 import java.util.ArrayList;
 import java.util.Random;
 
-/*
-Run Like:
-otherfile.main(args);
-*/
 
 class MainRunner{
 
     protected static ArrayList<String> locations = new ArrayList<>();
     protected static boolean running = false;
+    protected static int spacesleft = 9;
 
     public MainRunner(){
 
@@ -18,13 +15,20 @@ class MainRunner{
     public static void computerTurn(){
 
         boolean choseSpace = false;
+        
+        if(spacesleft==0){
+            System.out.println("\n\nIt's a tie!!!\n\n");
+            System.exit(0);
+        }
         while(choseSpace ==false){
              Random rand = new Random();
              int chosen = rand.nextInt(9);
              if(locations.get(chosen).equals("none")){
                 locations.set(chosen,"Computer");
+                choseSpace = true;
+                ButtonPannel.disable(chosen+1); 
+                spacesleft--;
              }
-             choseSpace = true; 
         }
         
     }

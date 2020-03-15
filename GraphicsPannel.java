@@ -65,7 +65,6 @@ public class GraphicsPannel extends JPanel
 				collum=3;
 			}
 
-			System.out.println(MainRunner.locations);
 			if(MainRunner.locations.get(i).equals("Player")){
 				drawx(page,collum,row);
 			}
