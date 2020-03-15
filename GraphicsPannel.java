@@ -30,6 +30,10 @@ public class GraphicsPannel extends JPanel
 
 		  //System.out.println(MainRunner.location1);
 		  
+
+		  drawWin(page, MainRunner.checkPlayerWin());
+		  drawWin(page, MainRunner.checkComputerWin());
+
 		  page.setColor(Color.BLACK);
 
 		  //Draw horizontal bars
@@ -73,8 +77,60 @@ public class GraphicsPannel extends JPanel
 			}
 
 		}
-		repaint();
 
+		if(MainRunner.gameInSession==true){
+		repaint();
+		}
+		else{
+			ButtonPannel.move1.setEnabled(false);
+			ButtonPannel.move2.setEnabled(false);
+			ButtonPannel.move3.setEnabled(false);
+			ButtonPannel.move4.setEnabled(false);
+			ButtonPannel.move5.setEnabled(false);
+			ButtonPannel.move6.setEnabled(false);
+			ButtonPannel.move7.setEnabled(false);
+			ButtonPannel.move8.setEnabled(false);
+			ButtonPannel.move9.setEnabled(false);
+		}
+
+	   }
+
+	   public void drawWin(Graphics page, String outcome){
+
+			if(outcome.equals("none")){
+
+			}
+			else{
+
+				if(outcome.equals("r1")){
+					page.drawLine(50,100,450,100);
+				}
+				if(outcome.equals("r2")){
+					page.drawLine(50,240,450,240);
+				}
+				if(outcome.equals("r3")){
+					page.drawLine(50,380,450,380);
+				}
+
+
+				if(outcome.equals("c1")){
+					page.drawLine(100,50,100,400);
+				}
+				if(outcome.equals("c2")){
+					page.drawLine(240,50,240,400);
+				}
+				if(outcome.equals("c3")){
+					page.drawLine(380,50,380,400);
+				}
+
+				if(outcome.equals("d1")){
+					page.drawLine(80,80,400,380);
+				}
+				if(outcome.equals("d2")){
+					page.drawLine(400,80,80,380);
+				}
+				MainRunner.gameInSession = false;
+			}
 	   }
 	   
 	   public void drawx(Graphics page, int row,int collum){

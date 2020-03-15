@@ -19,15 +19,15 @@ import java.applet.Applet;
 
 public class ButtonPannel extends JPanel {
     
-    private static JButton move1 = new JButton("Space 1");
-    private static JButton move2 = new JButton("Space 2");
-    private static JButton move3 = new JButton("Space 3");
-    private static JButton move4 = new JButton("Space 4");
-    private static JButton move5 = new JButton("Space 5");
-    private static JButton move6 = new JButton("Space 6");
-    private static JButton move7 = new JButton("Space 7");
-    private static JButton move8 = new JButton("Space 8");
-    private static JButton move9 = new JButton("Space 9");
+    protected static JButton move1 = new JButton("Space 1");
+    protected static JButton move2 = new JButton("Space 2");
+    protected static JButton move3 = new JButton("Space 3");
+    protected static JButton move4 = new JButton("Space 4");
+    protected static JButton move5 = new JButton("Space 5");
+    protected static JButton move6 = new JButton("Space 6");
+    protected static JButton move7 = new JButton("Space 7");
+    protected static JButton move8 = new JButton("Space 8");
+    protected static JButton move9 = new JButton("Space 9");
 
 
     public static void main(String[] args) {
