@@ -101,7 +101,7 @@ public class GraphicsPannel extends JPanel
 
 			}
 			else{
-
+				page.setColor(Color.RED);
 				if(outcome.equals("r1")){
 					page.drawLine(50,100,450,100);
 				}
