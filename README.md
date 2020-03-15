@@ -10,9 +10,7 @@
 - Use the button pannel to choose your space
 - Board Layout:
 
-1 2 3
-4 5 6
-7 8 9
+1 2 3\n4 5 6\n7 8 9
   
 #### Quick Facts
 
