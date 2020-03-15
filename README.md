@@ -19,6 +19,6 @@ How to Play:
 Quick Facts:
 
 - Over 5 hours of work
-- Used every Java skill we have learned to date. EVERY
+- Used every Java skill we have learned to date. EVERY SINGLE ONE (I'm fairly confident)
 - Actually works holy moly what an acomplishment
 - Im tired I'm about to colapseeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
