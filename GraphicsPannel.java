@@ -2,21 +2,11 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import java.awt.*;
 
-/**
- * Draws a snowman to demonstrate drawing methods and use of color.
- * @author Java Foundations, converted to GUI by mvail
- */
 public class GraphicsPannel extends JPanel {
 
-	/**
-	 * @param page object on which drawing takes place
-	 */
 	public void paintComponent(Graphics page) {
 		final int WIDTH = 500;
 		final int HEIGHT = 500;
-
-		//System.out.println(MainRunner.location1);
-
 
 		drawWin(page, MainRunner.checkPlayerWin());
 		drawWin(page, MainRunner.checkComputerWin());
@@ -135,18 +125,10 @@ public class GraphicsPannel extends JPanel {
 		page.drawOval(60 + (140 * row), 40 + (collum * 140), 100, 100);
 	}
 
-
-	/**
-	 * Constructor (panel initialization)
-	 */
 	public GraphicsPannel() {
 		setPreferredSize(new Dimension(500, 500));
 	}
 
-
-	/*
-	 * @param args unused
-	 */
 	public static void main(String[] args) {
 
 		if (MainRunner.running == false) {

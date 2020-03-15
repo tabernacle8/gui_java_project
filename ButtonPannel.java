@@ -25,8 +25,6 @@ public class ButtonPannel extends JPanel {
         }
         final JFrame frame = new JFrame();
 
-
-        //JButton move1 = new JButton("Space 1");
         move1.addActionListener(
             new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
@@ -38,7 +36,7 @@ public class ButtonPannel extends JPanel {
                     }
                 }
             });
-        //JButton move2 = new JButton("Space 2");
+
         move2.addActionListener(
             new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
@@ -50,7 +48,7 @@ public class ButtonPannel extends JPanel {
                     }
                 }
             });
-        //JButton move3 = new JButton("Space 3");
+
         move3.addActionListener(
             new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
@@ -62,7 +60,7 @@ public class ButtonPannel extends JPanel {
                     }
                 }
             });
-        //JButton move4 = new JButton("Space 4");
+
         move4.addActionListener(
             new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
@@ -74,7 +72,7 @@ public class ButtonPannel extends JPanel {
                     }
                 }
             });
-        //JButton move5 = new JButton("Space 5");
+
         move5.addActionListener(
             new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
@@ -86,7 +84,7 @@ public class ButtonPannel extends JPanel {
                     }
                 }
             });
-        //JButton move6 = new JButton("Space 6");
+
         move6.addActionListener(
             new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
@@ -98,7 +96,7 @@ public class ButtonPannel extends JPanel {
                     }
                 }
             });
-        // JButton move7 = new JButton("Space 7");
+
         move7.addActionListener(
             new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
@@ -110,7 +108,7 @@ public class ButtonPannel extends JPanel {
                     }
                 }
             });
-        // JButton move8 = new JButton("Space 8");
+
         move8.addActionListener(
             new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
@@ -122,7 +120,7 @@ public class ButtonPannel extends JPanel {
                     }
                 }
             });
-        //JButton move9 = new JButton("Space 9");
+
         move9.addActionListener(
             new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
@@ -135,10 +133,6 @@ public class ButtonPannel extends JPanel {
                     }
                 }
             });
-
-
-
-
 
         JPanel buttonPanel = new JPanel();
         buttonPanel.add(move1);
@@ -153,7 +147,6 @@ public class ButtonPannel extends JPanel {
 
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(1000, 100);
-        //frame.setBounds(0, 0, 1000, 10);
         frame.getContentPane().add(buttonPanel, BorderLayout.SOUTH);
         frame.setVisible(true);
     }

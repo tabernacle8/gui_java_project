@@ -94,8 +94,6 @@ class MainRunner {
         return ("none");
     }
 
-
-
     public static void main(String[] args) {
         System.out.println("Boot!");
         running = true;
@@ -104,7 +102,5 @@ class MainRunner {
         }
         ButtonPannel.main(args);
         GraphicsPannel.main(args);
-
-
     }
 }
