@@ -18,7 +18,7 @@ import java.awt.*;
 import java.applet.Applet;
 
 public class ButtonPannel extends JPanel {
-    
+
     protected static JButton move1 = new JButton("Space 1");
     protected static JButton move2 = new JButton("Space 2");
     protected static JButton move3 = new JButton("Space 3");
@@ -41,108 +41,116 @@ public class ButtonPannel extends JPanel {
         move1.addActionListener(
             new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
-                    if(MainRunner.locations.get(0).equals("none")){
-                   MainRunner.locations.set(0,"Player");
-                   MainRunner.spacesleft--;
-                   MainRunner.computerTurn();
+                    if (MainRunner.locations.get(0).equals("none")) {
+                        MainRunner.locations.set(0, "Player");
+                        MainRunner.spacesleft--;
+                        MainRunner.computerTurn();
                         move1.setEnabled(false);
                     }
                 }
             });
-            //JButton move2 = new JButton("Space 2");
-            move2.addActionListener(
-                new ActionListener() {
-                    public void actionPerformed(ActionEvent e) {
-                        if(MainRunner.locations.get(1).equals("none")){
-                        MainRunner.locations.set(1,"Player");
+        //JButton move2 = new JButton("Space 2");
+        move2.addActionListener(
+            new ActionListener() {
+                public void actionPerformed(ActionEvent e) {
+                    if (MainRunner.locations.get(1).equals("none")) {
+                        MainRunner.locations.set(1, "Player");
                         MainRunner.spacesleft--;
                         MainRunner.computerTurn();
                         move2.setEnabled(false);
-                    }}
-                });
-                //JButton move3 = new JButton("Space 3");
-                move3.addActionListener(
-                    new ActionListener() {
-                        public void actionPerformed(ActionEvent e) {
-                            if(MainRunner.locations.get(2).equals("none")){
-                            MainRunner.locations.set(2,"Player");
-                            MainRunner.spacesleft--;
-                            MainRunner.computerTurn();
-                            move3.setEnabled(false);
-                        }}
-                    });
-                    //JButton move4 = new JButton("Space 4");
-                    move4.addActionListener(
-                        new ActionListener() {
-                            public void actionPerformed(ActionEvent e) {
-                                if(MainRunner.locations.get(3).equals("none")){
-                                MainRunner.locations.set(3,"Player");
-                                MainRunner.spacesleft--;
-                                MainRunner.computerTurn();
-                                move4.setEnabled(false);
-                            }}
-                        });
-                        //JButton move5 = new JButton("Space 5");
-                        move5.addActionListener(
-                            new ActionListener() {
-                                public void actionPerformed(ActionEvent e) {
-                                    if(MainRunner.locations.get(4).equals("none")){
-                                    MainRunner.locations.set(4,"Player");
-                                    MainRunner.spacesleft--;
-                                    MainRunner.computerTurn();
-                                    move5.setEnabled(false);
-                                }}
-                            });
-                            //JButton move6 = new JButton("Space 6");
-                            move6.addActionListener(
-                                new ActionListener() {
-                                    public void actionPerformed(ActionEvent e) {
-                                        if(MainRunner.locations.get(5).equals("none")){
-                                        MainRunner.locations.set(5,"Player");
-                                        MainRunner.spacesleft--;
-                                        MainRunner.computerTurn();
-                                        move6.setEnabled(false);
-                                    }}
-                                });
-                              // JButton move7 = new JButton("Space 7");
-                                move7.addActionListener(
-                                    new ActionListener() {
-                                        public void actionPerformed(ActionEvent e) {
-                                            if(MainRunner.locations.get(6).equals("none")){
-                                            MainRunner.locations.set(6,"Player");
-                                            MainRunner.spacesleft--;
-                                            MainRunner.computerTurn();
-                                            move7.setEnabled(false);
-                                        }}
-                                    });
-                                   // JButton move8 = new JButton("Space 8");
-                                    move8.addActionListener(
-                                        new ActionListener() {
-                                            public void actionPerformed(ActionEvent e) {
-                                                if(MainRunner.locations.get(7).equals("none")){
-                                                MainRunner.locations.set(7,"Player");
-                                                MainRunner.spacesleft--;
-                                                MainRunner.computerTurn();
-                                                move8.setEnabled(false);
-                                            }}
-                                        });
-                                        //JButton move9 = new JButton("Space 9");
-                                        move9.addActionListener(
-                                            new ActionListener() {
-                                                public void actionPerformed(ActionEvent e) {
-                                                    if(MainRunner.locations.get(8).equals("none")){
-                                                    MainRunner.locations.set(8,"Player");
-                                                    MainRunner.spacesleft--;
-                                                    MainRunner.computerTurn();
-                                                    move9.setEnabled(false);
-                                                
-                                                }}
-                                            });
+                    }
+                }
+            });
+        //JButton move3 = new JButton("Space 3");
+        move3.addActionListener(
+            new ActionListener() {
+                public void actionPerformed(ActionEvent e) {
+                    if (MainRunner.locations.get(2).equals("none")) {
+                        MainRunner.locations.set(2, "Player");
+                        MainRunner.spacesleft--;
+                        MainRunner.computerTurn();
+                        move3.setEnabled(false);
+                    }
+                }
+            });
+        //JButton move4 = new JButton("Space 4");
+        move4.addActionListener(
+            new ActionListener() {
+                public void actionPerformed(ActionEvent e) {
+                    if (MainRunner.locations.get(3).equals("none")) {
+                        MainRunner.locations.set(3, "Player");
+                        MainRunner.spacesleft--;
+                        MainRunner.computerTurn();
+                        move4.setEnabled(false);
+                    }
+                }
+            });
+        //JButton move5 = new JButton("Space 5");
+        move5.addActionListener(
+            new ActionListener() {
+                public void actionPerformed(ActionEvent e) {
+                    if (MainRunner.locations.get(4).equals("none")) {
+                        MainRunner.locations.set(4, "Player");
+                        MainRunner.spacesleft--;
+                        MainRunner.computerTurn();
+                        move5.setEnabled(false);
+                    }
+                }
+            });
+        //JButton move6 = new JButton("Space 6");
+        move6.addActionListener(
+            new ActionListener() {
+                public void actionPerformed(ActionEvent e) {
+                    if (MainRunner.locations.get(5).equals("none")) {
+                        MainRunner.locations.set(5, "Player");
+                        MainRunner.spacesleft--;
+                        MainRunner.computerTurn();
+                        move6.setEnabled(false);
+                    }
+                }
+            });
+        // JButton move7 = new JButton("Space 7");
+        move7.addActionListener(
+            new ActionListener() {
+                public void actionPerformed(ActionEvent e) {
+                    if (MainRunner.locations.get(6).equals("none")) {
+                        MainRunner.locations.set(6, "Player");
+                        MainRunner.spacesleft--;
+                        MainRunner.computerTurn();
+                        move7.setEnabled(false);
+                    }
+                }
+            });
+        // JButton move8 = new JButton("Space 8");
+        move8.addActionListener(
+            new ActionListener() {
+                public void actionPerformed(ActionEvent e) {
+                    if (MainRunner.locations.get(7).equals("none")) {
+                        MainRunner.locations.set(7, "Player");
+                        MainRunner.spacesleft--;
+                        MainRunner.computerTurn();
+                        move8.setEnabled(false);
+                    }
+                }
+            });
+        //JButton move9 = new JButton("Space 9");
+        move9.addActionListener(
+            new ActionListener() {
+                public void actionPerformed(ActionEvent e) {
+                    if (MainRunner.locations.get(8).equals("none")) {
+                        MainRunner.locations.set(8, "Player");
+                        MainRunner.spacesleft--;
+                        MainRunner.computerTurn();
+                        move9.setEnabled(false);
+
+                    }
+                }
+            });
 
 
 
-        
-        
+
+
         JPanel buttonPanel = new JPanel();
         buttonPanel.add(move1);
         buttonPanel.add(move2);
@@ -161,32 +169,32 @@ public class ButtonPannel extends JPanel {
         frame.setVisible(true);
     }
 
-    public static void disable(int number){
-        if(number==1){
+    public static void disable(int number) {
+        if (number == 1) {
             move1.setEnabled(false);
         }
-        if(number==2){
+        if (number == 2) {
             move2.setEnabled(false);
         }
-        if(number==3){
+        if (number == 3) {
             move3.setEnabled(false);
         }
-        if(number==4){
+        if (number == 4) {
             move4.setEnabled(false);
         }
-        if(number==5){
+        if (number == 5) {
             move5.setEnabled(false);
         }
-        if(number==6){
+        if (number == 6) {
             move6.setEnabled(false);
         }
-        if(number==7){
+        if (number == 7) {
             move7.setEnabled(false);
         }
-        if(number==8){
+        if (number == 8) {
             move8.setEnabled(false);
         }
-        if(number==9){
+        if (number == 9) {
             move9.setEnabled(false);
         }
     }
